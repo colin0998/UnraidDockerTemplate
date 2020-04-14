@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AMP</Name>
+  <Repository>cubecoders/amp</Repository>
+  <Registry>https://github.com/CubeCoders/AMP</Registry>
+  <Network>game</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>AMP is short for Application Management Panel. &#xD;
+It's our next-generation server administration software built for both users, and service providers. &#xD;
+It supports both Windows and Linux based servers and allows you to manage all your game servers from a single web interface.&#xD;
+&#xD;
+Additional info : &#xD;
+tty and std-in/out is required to allow ads to &#xD;
+execute without "open terminal failed" error.&#xD;
+&#xD;
+amp license is also bounded to a mac address, therefore its important to assign static mac address to your container with the format 02:42:XX:XX:XX:XX&#xD;
+&#xD;
+extra parameters; &#xD;
+-i (std input)&#xD;
+-t (terminal)&#xD;
+--mac-address 02:42:XX:XX:XX:XX&#xD;
+&#xD;
+additional port can be mapped according to the server you host, &#xD;
+example: Minecraft_TCP_25565&#xD;
+Config Type : Port&#xD;
+Name : Minecraft&#xD;
+Container Port : 25565&#xD;
+Host Port : 25565&#xD;
+Connection Type : TCP&#xD;
+&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>-i -t --mac-address 02:42:76:9F:81:63</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1586887757</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>AMP is short for Application Management Panel. &#xD;
+It's our next-generation server administration software built for both users, and service providers. &#xD;
+It supports both Windows and Linux based servers and allows you to manage all your game servers from a single web interface.&#xD;
+&#xD;
+Additional info : &#xD;
+tty and std-in/out is required to allow ads to &#xD;
+execute without "open terminal failed" error.&#xD;
+&#xD;
+amp license is also bounded to a mac address, therefore its important to assign static mac address to your container with the format 02:42:XX:XX:XX:XX&#xD;
+&#xD;
+extra parameters; &#xD;
+-i (std input)&#xD;
+-t (terminal)&#xD;
+--mac-address 02:42:XX:XX:XX:XX&#xD;
+&#xD;
+additional port can be mapped according to the server you host, &#xD;
+example: Minecraft_TCP_25565&#xD;
+Config Type : Port&#xD;
+Name : Minecraft&#xD;
+Container Port : 25565&#xD;
+Host Port : 25565&#xD;
+Connection Type : TCP&#xD;
+&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/amp</HostDir>
+      <ContainerDir>/home/amp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin</Value>
+      <Name>ANSWER_AMPUSER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>changeme</Value>
+      <Name>ANSWER_AMPPASS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="GUI Port : 8080" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8091</Config>
+  <Config Name="AMP Directory" Target="/home/amp" Default="" Mode="rw" Description="Container Path: /home/amp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/amp</Config>
+  <Config Name="AMP_User" Target="ANSWER_AMPUSER" Default="" Mode="" Description="Container Variable: ANSWER_AMPUSER" Type="Variable" Display="always" Required="false" Mask="false">mc</Config>
+  <Config Name="AMP_Password" Target="ANSWER_AMPPASS" Default="" Mode="" Description="Container Variable: ANSWER_AMPPASS" Type="Variable" Display="always" Required="false" Mask="false">123asd</Config>
+</Container>
