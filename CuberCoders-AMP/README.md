@@ -1,7 +1,7 @@
-running this template straight should get you started right away.
+running this template straight should get you started right away. \n
 original owner : CubeCoders/AMP
 
-Once execute it should take about 10minutes to download the server file and execute
+Once execute it should take about 10minutes to download the server file and execute \n
 *you can view the logs to see the progress*
 you can access the web ui by visiting <ip address>:8080, or left click the icon and click WebUI
 
