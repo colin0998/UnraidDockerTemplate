@@ -36,7 +36,7 @@ Connection Type : TCP&#xD;
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/FranciumF/UnraidDockerTemplate/blob/master/CuberCoders-AMP/logo.png<Icon/>
   <ExtraParams>-i -t --mac-address 02:42:76:9F:81:63</ExtraParams>
   <PostArgs/>
   <CPUset/>
