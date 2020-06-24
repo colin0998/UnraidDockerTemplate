@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support>https://forums.unraid.net/topic/91061-support-cubecoders-amp/<Support/>
+  <Support>https://forums.unraid.net/topic/91061-support-cubecoders-amp/</Support>
   <Project/>
   <Overview>AMP is short for Application Management Panel. &#xD;
 It's our next-generation server administration software built for both users, and service providers. &#xD;
